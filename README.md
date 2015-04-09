@@ -16,8 +16,7 @@ We need to make sure that these serial ports don't really exist! You can usually
 We named this package as test because we can run different algorithms on it, so it is still under development and we can use it for different purposes.
 
 We use this package to translate the raw sensors data and plot the following:
-
-*The audio signal from Bluetooth sensor
-*The accelerometer x,y and z data from Bluetooth and ZigBee sensors
-*The RSSI value from ZigBee sensor
+      *The audio signal from Bluetooth sensor
+      *The accelerometer x,y and z data from Bluetooth and ZigBee sensors
+      *The RSSI value from ZigBee sensor
       
