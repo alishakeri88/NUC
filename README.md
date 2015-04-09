@@ -1,5 +1,7 @@
 # NUC
-We run two JAVA packages on the NUC to receive the data from Beaglebone Black and plot them in real-time.
+We run two JAVA packages on the NUC to receive the data from Beaglebone Black (ZigBee Sensors) and Bluetooth USB dongle (Blurtooth Sensors). Then, we plot them in real-time.
+
+
 ##SerialBuffer
 This package lets us have access to the serial ports on the NUC. In linux the serial ports are listed in the /dev folder and they are usually called /dev/ttyS* so when we run the program it goes to read these devices.
 Since we are connecting our sensors to the NUC via USB interface we can read their data on the /dev/rfcomm* ports which are not known by this package as a serial port!
