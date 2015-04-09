@@ -6,7 +6,18 @@ Since we are connecting our sensors to the NUC via USB interface we can read the
 
 Here we need to make a little change to introduce these ports to our program. Following commands can link the rfcomm ports to the serial ports (ttyS):
 
+      cd /dev
       ln -s rfcomm0 ttyS50
       ln -s rfcomm1 ttyS51
 
 We need to make sure that these serial ports don't really exist! You can usually use the number more than 50 like what we did.
+
+##test
+We named this package as test because we can run different algorithms on it, so it is still under development and we can use it for different purposes.
+
+We use this package to translate the raw sensors data and plot the following:
+
+      * The audio signal from Bluetooth sensor 
+      * The accelerometer x,y and z data from Bluetooth and ZigBee sensors
+      * The RSSI value from ZigBee sensor
+      
